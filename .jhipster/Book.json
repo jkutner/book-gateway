@@ -1,0 +1,16 @@
+{
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "isbn",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20160809170945",
+    "dto": "no",
+    "service": "no",
+    "entityTableName": "book",
+    "pagination": "no",
+    "microserviceName": "BookService",
+    "searchEngine": "no"
+}

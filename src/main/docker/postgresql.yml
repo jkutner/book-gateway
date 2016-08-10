@@ -1,0 +1,12 @@
+version: '2'
+services:
+    bookgateway-postgresql:
+        container_name: bookgateway-postgresql
+        image: postgres:9.5.3
+        # volumes:
+        #     - ~/volumes/jhipster/BookGateway/postgresql/:/var/lib/postgresql/
+        environment:
+            - POSTGRES_USER=BookGateway
+            - POSTGRES_PASSWORD=
+        ports:
+            - 5432:5432
