@@ -1,5 +1,7 @@
 # BookGateway
 
+[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
+
 This application was generated using JHipster, you can find documentation and help at [https://jhipster.github.io](https://jhipster.github.io).
 
 ~~~
@@ -37,7 +39,7 @@ This application was generated using JHipster, you can find documentation and he
             V                                             |
         +-------+                                         |
         |       |                 /------------------------------------------------\
-        |  Git  |                 | ELK                   |                        | 
+        |  Git  |                 | ELK                   |                        |
         |  Repo |                 |                       V 5000                   |
         +-------+                 | +---------+      +----------+      +--------+  |
                                   | | Elastic |      | Logstash |      | Kibana |  |

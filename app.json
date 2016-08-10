@@ -1,0 +1,30 @@
+{
+  "name": "Book Gateway",
+  "description": "This is the JHipster gateway app, based on Spring Cloud and Netflix Zuul.",
+  "env": {
+    "JHIPSTER_REGISTRY_URL": {
+      "description": "URL for the registry (including username and password).",
+      "required": "true"
+    },
+    "HEROKU_APP_NAME": {
+      "description": "Repeat the app name entered above.",
+      "required": "true"
+    },
+    "MAVEN_CUSTOM_OPTS": {
+      "description": "Options for the Maven build.",
+      "value": "-Pprod,heroku -DskipTests"
+    },
+    "NPM_CONFIG_PRODUCTION": {
+      "description": "Install devDependencies",
+      "value": "false"
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    },
+    {
+      "url": "heroku/java"
+    }
+  ]
+}
