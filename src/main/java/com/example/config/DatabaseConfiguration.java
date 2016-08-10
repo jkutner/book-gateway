@@ -43,7 +43,7 @@ public class DatabaseConfiguration {
     private MetricRegistry metricRegistry;
 
     @Bean(destroyMethod = "close")
-    @ConditionalOnExpression("#{!environment.acceptsProfiles('" + Constants.SPRING_PROFILE_CLOUD + "') && !environment.acceptsProfiles('" + Constants.SPRING_PROFILE_HEROKU + "')}")
+    @ConditionalOnExpression("#{!environment.acceptsProfiles('" + Constants.SPRING_PROFILE_CLOUD + "')")
     public DataSource dataSource(DataSourceProperties dataSourceProperties) {
         log.debug("Configuring Datasource");
         if (dataSourceProperties.getUrl() == null) {
